@@ -19,7 +19,6 @@ def data():
         {'name': 'word_2', 'type': str}
     ]
     for parameter in parameters:
-        # print(parameter['name'])
         if parameter['name'] not in content or type(content[parameter['name']]) is not str:
             return json.dumps({"message": "Parameter '{}' incorrected".format(parameter['name'])}, sort_keys=True), 400
     return my.print_text(content['word_1'],content['word_2'])
