@@ -12,7 +12,6 @@ def index():
 @app.route('/my-script',methods=['POST'])
 def data():
     content = request.json
-    print(content)
     if content is None or type(content) is not dict:
         return json.dumps({"code":400,"message": "Bad Request"}, ensure_ascii=False, indent=4, sort_keys=True), 400
     parameters = [
