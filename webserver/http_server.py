@@ -24,4 +24,4 @@ def data():
     return my.print_text(content['word_1'],content['word_2'])
 
 if __name__ == '__main__':
-    app.run(host='localhost', port='10000',debug=True)
+    app.run(host='127.0.0.1', port='10000')
